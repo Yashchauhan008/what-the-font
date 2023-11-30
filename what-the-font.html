@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <style>
+        @font-face {
+            font-family: akira_expanded;
+            src: url(./fonts/akira_expanded/Akira\ Expanded\ Demo.otf)
+        }
+
+        @font-face {
+            font-family: alinore;
+            src: url(./fonts/alinore/Alinore.otf)
+        }
+
+        @font-face {
+            font-family: american_kestrel;
+            src: url(./fonts/american_kestrel/americankestral1_2.ttf)
+        }
+
+        @font-face {
+            font-family: annabel;
+            src: url(./fonts/annabel/annabel\ 1.ttf)
+        }
+
+        @font-face {
+            font-family: beyonders;
+            src: url(./fonts/beyonders/Beyonders.ttf)
+        }
+
+        @font-face {
+            font-family: blacklisted;
+            src: url(./fonts/blacklisted/Blacklisted.ttf)
+        }
+
+        @font-face {
+            font-family: blazed;
+            src: url(./fonts/blazed/Blazed.ttf)
+        }
+
+        @font-face {
+            font-family: caviar_dreams;
+            src: url(./fonts/caviar_dreams/CaviarDreams_BoldItalic.ttf)
+        }
+
+        @font-face {
+            font-family: chatime;
+            src: url(./fonts/chatime/chatime.otf)
+        }
+
+        @font-face {
+            font-family: chopsic;
+            src: url(./fonts/chopsic/Chopsic.otf)
+        }
+
+        @font-face {
+            font-family: classy_vogue;
+            src: url(./fonts/classy_vogue/Classyvogueregular.ttf)
+        }
+
+        @font-face {
+            font-family: crima;
+            src: url(./fonts/crima/Crima.ttf)
+        }
+
+        @font-face {
+            font-family: cyber_2;
+            src: url(./fonts/cyber_2/Cyber.ttf)
+        }
+
+        @font-face {
+            font-family: designer_2;
+            src: url(./fonts/designer_2/Designer.otf)
+        }
+
+        @font-face {
+            font-family: doctor_glitch;
+            src: url(./fonts/doctor_glitch/Doctor\ Glitch.otf)
+        }
+
+        @font-face {
+            font-family: freshman;
+            src: url(./fonts/freshman/Freshman.ttf)
+        }
+
+        @font-face {
+            font-family: Gabarito;
+            src: url(./fonts/Gabarito/Gabarito-VariableFont_wght.ttf)
+        }
+
+        @font-face {
+            font-family: gotham;
+            src: url(./fonts/gotham/Gotham.ttf)
+        }
+
+        @font-face {
+            font-family: hanging_letters;
+            src: url(./fonts/hanging_letters/Hanged\ Letters.ttf)
+        }
+
+        @font-face {
+            font-family: heavitas;
+            src: url(./fonts/heavitas/Heavitas.ttf)
+        }
+
+        @font-face {
+            font-family: hypersuper;
+            src: url(./fonts/hypersuper/HyperSuperItalic.ttf)
+        }
+
+        @font-face {
+            font-family: jonathan_hetegral;
+            src: url(./fonts/jonathan_hetegral/Jonathan\ Hetegral.otf)
+        }
+
+        @font-face {
+            font-family: kg_happy;
+            src: url(./fonts/kg_happy/KGHAPPY.ttf)
+        }
+
+        @font-face {
+            font-family: Lato;
+            src: url(./fonts/Lato/Lato-Black.ttf)
+        }
+
+        @font-face {
+            font-family: lemon_milk;
+            src: url(./fonts/lemon_milk/LEMONMILK-Bold.otf)
+        }
+
+        @font-face {
+            font-family: magmawave_caps;
+            src: url(./fonts/magmawave_caps/MagmaWave\ Caps.otf)
+        }
+
+        @font-face {
+            font-family: Montserrat;
+            src: url(./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf)
+        }
+
+        @font-face {
+            font-family: nasalization;
+            src: url(./fonts/nasalization/nasalization-rg.otf)
+        }
+
+        @font-face {
+            font-family: nexa;
+            src: url(./fonts/nexa/Nexa-ExtraLight.ttf)
+        }
+
+        @font-face {
+            font-family: no_continue;
+            src: url(./fonts/no_continue/gomarice_no_continue.ttf)
+        }
+
+        @font-face {
+            font-family: Open_Sans;
+            src: url(./fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf)
+        }
+
+        @font-face {
+            font-family: paladins;
+            src: url(./fonts/paladins/paladins.ttf)
+        }
+
+        @font-face {
+            font-family: race_sport;
+            src: url(./fonts/race_sport/Race\ Sport.ttf)
+        }
+
+        @font-face {
+            font-family: rhuma_sinera;
+            src: url(./fonts/rhuma_sinera/Rhuma\ Sinera\ Inline.ttf)
+        }
+
+        @font-face {
+            font-family: Roboto;
+            src: url(./fonts/Roboto/Roboto-Black.ttf)
+        }
+
+        @font-face {
+            font-family: rough_battle;
+            src: url(./fonts/rough_battle/Rough\ Battle.ttf)
+        }
+
+        @font-face {
+            font-family: space_age;
+            src: url(./fonts/space_age/space\ age.ttf)
+        }
+
+        @font-face {
+            font-family: spritz_and_delicious;
+            src: url(./fonts/spritz_and_delicious/SpritzAndDelicious_PERSONAL_USE_ONLY.otf)
+        }
+
+        @font-face {
+            font-family: storm_gust;
+            src: url(./fonts/storm_gust/Storm\ Gust.ttf)
+        }
+
+        @font-face {
+            font-family: tourner;
+            src: url(./fonts/tourner/Tourner.ttf)
+        }
+
+        @font-face {
+            font-family: urban_jungle;
+            src: url(./fonts/urban_jungle/UrbanJungleDEMO.otf)
+        }
+
+        @font-face {
+            font-family: valoon;
+            src: url(./fonts/valoon/Valoon.ttf)
+        }
+
+        @font-face {
+            font-family: varsity_2;
+            src: url(./fonts/varsity_2/varsity_regular.ttf)
+        }
+
+        @font-face {
+            font-family: Vina_Sans;
+            src: url(./fonts/Vina_Sans/VinaSans-Regular.ttf)
+        }
+
+        @font-face {
+            font-family: Ysabeau_Infant;
+            src: url(./fonts/Ysabeau_Infant/YsabeauInfant-Italic-VariableFont_wght.ttf);
+        }
+
+
+
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #7ED7C1;
+        }
+
+        #nav {
+            color: #F0DBAF;
+            position: relative;
+            height: 100px;
+            width: 100vw;
+            background-color: #B06161;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            border-radius: 0px 0px 110px 110px;
+        }
+
+        #nav h1 {
+            font-family: doctor_glitch;
+            font-size: 60px;
+
+        }
+
+        @media screen and (max-width:650px) {
+            #nav h1 {
+                font-size: 45px;
+                font-family: gotham;
+            }
+        }
+
+        @media screen and (min-width:651px) and (max-width:1000px) {
+            #nav h1 {
+                font-size: 50px;
+                font-family: blacklisted;
+            }
+        }
+
+        #list {
+            height: auto;
+            width: 100vw;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            z-index: 10;
+        }
+
+        #list h1 {
+            overflow: hidden;
+            width: 80vw;
+            margin: 10px;
+            background-color: #dc8686bd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            border: 3px solid #B06161;
+            border-radius: 50px;
+            height: 70px;
+            font-size: 40px;
+        }
+
+
+
+
+
+
+
+        #floater img {
+            position: static;
+            height: 60px;
+            width: 60px;
+            object-fit: cover;
+        }
+
+        #floater img:nth-child(0001) {
+            position: absolute;
+            top: 380px;
+            left: 25vw;
+            scale: 4;
+        }
+
+        #floater img:nth-child(0002) {
+            position: absolute;
+            top: 760px;
+            left: 70vw;
+            scale: 5;
+        }
+
+        #floater img:nth-child(0003) {
+            position: absolute;
+            top: 1140px;
+            left: 90vw;
+            scale: 3;
+        }
+
+        #floater img:nth-child(0004) {
+            position: absolute;
+            top: 1520px;
+            left: 10vw;
+            scale: 5;
+        }
+
+        #floater img:nth-child(0005) {
+            position: absolute;
+            top: 1900px;
+            left: 60vw;
+            scale: 4;
+        }
+
+        #floater img:nth-child(0006) {
+            position: absolute;
+            top: 2280px;
+            left: 30vw;
+            scale: 7;
+        }
+
+        #floater img:nth-child(0007) {
+            position: absolute;
+            top: 2660px;
+            left: 80vw;
+            scale: 3;
+        }
+
+        #floater img:nth-child(0008) {
+            position: absolute;
+            top: 3040px;
+            left: 40vw;
+            scale: 6;
+        }
+
+        #floater img:nth-child(0009) {
+            position: absolute;
+            top: 3420px;
+            left: 90vw;
+            scale: 4;
+        }
+
+        #floater img:nth-child(0010) {
+            position: absolute;
+            top: 3800px;
+            left: 22vw;
+            scale: 8;
+        }
+
+        #floater1 img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            z-index: 100;
+        }
+
+        #floater1 img:nth-child(0001) {
+            position: absolute;
+            top: 150px;
+            left: 5vw;
+            scale: 2;
+        }
+
+        #floater1 img:nth-child(0002) {
+            position: absolute;
+            top: 532px;
+            left: 88vw;
+            scale: 4;
+
+        }
+
+        #floater1 img:nth-child(0003) {
+            position: absolute;
+            top: 912px;
+            left: 8vw;
+            scale: 2.6;
+        }
+
+        #floater1 img:nth-child(0004) {
+            position: absolute;
+            top: 1292px;
+            left: 92vw;
+            scale: 2.6;
+        }
+
+        #floater1 img:nth-child(0005) {
+            position: absolute;
+            top: 1672px;
+            left: 2vw;
+            scale: 1.6;
+        }
+
+        #floater1 img:nth-child(0006) {
+            position: absolute;
+            top: 2052px;
+            left: 87vw;
+            scale: 2.2;
+        }
+
+        #floater1 img:nth-child(0007) {
+            position: absolute;
+            top: 2432px;
+            left: 7vw;
+            scale: 2.2;
+        }
+
+        #floater1 img:nth-child(0008) {
+            position: absolute;
+            top: 2812px;
+            left: 92vw;
+            scale: 3.5;
+        }
+
+        #floater1 img:nth-child(0009) {
+            position: absolute;
+            top: 3192px;
+            left: 9vw;
+            scale: 2.1;
+        }
+
+        #floater1 img:nth-child(0010) {
+            position: absolute;
+            top: 3572px;
+            left: 95vw;
+            scale: 2.1;
+        }
+
+
+
+
+
+
+        h1:nth-child(1) {
+            font-family: akira_expanded;
+        }
+
+        h1:nth-child(2) {
+            font-family: alinore;
+        }
+
+        h1:nth-child(0003) {
+            font-family: american_kestrel;
+        }
+
+        h1:nth-child(0004) {
+            font-family: annabel;
+        }
+
+        h1:nth-child(0005) {
+            font-family: beyonders;
+        }
+
+        h1:nth-child(0006) {
+            font-family: blacklisted;
+        }
+
+        h1:nth-child(0007) {
+            font-family: blazed;
+        }
+
+        h1:nth-child(0008) {
+            font-family: caviar_dreams;
+        }
+
+        h1:nth-child(0009) {
+            font-family: chatime;
+        }
+
+        h1:nth-child(0010) {
+            font-family: chopsic;
+        }
+
+        h1:nth-child(0011) {
+            font-family: classy_vogue;
+        }
+
+        h1:nth-child(0012) {
+            font-family: crima;
+        }
+
+        h1:nth-child(0013) {
+            font-family: cyber_2;
+        }
+
+        h1:nth-child(0014) {
+            font-family: designer_2;
+        }
+
+        h1:nth-child(0015) {
+            font-family: doctor_glitch;
+        }
+
+        h1:nth-child(0016) {
+            font-family: freshman;
+        }
+
+        h1:nth-child(0017) {
+            font-family: Gabarito;
+        }
+
+        h1:nth-child(0018) {
+            font-family: gotham;
+        }
+
+        h1:nth-child(0019) {
+            font-family: hanging_letters;
+        }
+
+        h1:nth-child(0020) {
+            font-family: heavitas;
+        }
+
+        h1:nth-child(0021) {
+            font-family: hypersuper;
+        }
+
+        h1:nth-child(0022) {
+            font-family: jonathan_hetegral;
+        }
+
+        h1:nth-child(0023) {
+            font-family: kg_happy;
+        }
+
+        h1:nth-child(0024) {
+            font-family: Lato;
+        }
+
+        h1:nth-child(0025) {
+            font-family: lemon_milk;
+        }
+
+        h1:nth-child(0026) {
+            font-family: magmawave_caps;
+        }
+
+        h1:nth-child(0027) {
+            font-family: Montserrat;
+        }
+
+        h1:nth-child(0028) {
+            font-family: nasalization;
+        }
+
+        h1:nth-child(0029) {
+            font-family: nexa;
+        }
+
+        h1:nth-child(0030) {
+            font-family: no_continue;
+        }
+
+        h1:nth-child(0031) {
+            font-family: Open_Sans;
+        }
+
+        h1:nth-child(0032) {
+            font-family: paladins;
+        }
+
+        h1:nth-child(0033) {
+            font-family: race_sport;
+        }
+
+        h1:nth-child(0034) {
+            font-family: rhuma_sinera;
+        }
+
+        h1:nth-child(0035) {
+            font-family: Roboto;
+        }
+
+        h1:nth-child(0036) {
+            font-family: rough_battle;
+        }
+
+        h1:nth-child(0037) {
+            font-family: space_age;
+        }
+
+        h1:nth-child(0038) {
+            font-family: spritz_and_delicious;
+        }
+
+        h1:nth-child(0039) {
+            font-family: storm_gust;
+        }
+
+        h1:nth-child(0040) {
+            font-family: tourner;
+        }
+
+        h1:nth-child(0041) {
+            font-family: urban_jungle;
+        }
+
+        h1:nth-child(0042) {
+            font-family: valoon;
+        }
+
+        h1:nth-child(0043) {
+            font-family: varsity_2;
+        }
+
+        h1:nth-child(0044) {
+            font-family: Vina_Sans;
+        }
+
+        h1:nth-child(0045) {
+            font-family: Ysabeau_Infant;
+        }
+        #list h1 a{
+            position: absolute;
+            right: 1vw;
+        }
+        #list h1 a button{
+            height: 40px;
+            width: 40px;
+            margin-left: 10px;
+            border-radius: 50px;
+            background-color: #B06161;
+            border: none;
+            box-shadow:  5px 5px #000;
+            transition: 0.4s;
+        }
+        #list h1 a button:active{
+            transform: translatex(5px)  translatey(5px);
+            box-shadow:2px 2px 4px #F0DBAF ;
+        }
+        #list h1 a button svg{
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <h1>what the font ?</h1>
+        </div>
+        <div id="list">
+            <h1>akira_expanded<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>alinore {how's the font} <a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>american_kestrel<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>annabel<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>beyonders<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>blacklisted<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>blazed<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>caviar_dreams<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>chatime<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>chopsic<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>classy_vogue<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>crima<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>cyber_2<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>designer_2<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>doctor_glitch<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>freshman<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>Gabarito<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>gotham<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>hanging_letters<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>heavitas<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>hypersuper<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>jonathan_hetegral<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>kg_happy<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>Lato<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>lemon_milk<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>magmawave_caps<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>Montserrat<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>nasalization<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>nexa<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>no_continue<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>Open_Sans<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>paladins<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>race_sport<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>rhuma_sinera<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>Roboto<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>rough_battle<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>space_age<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>spritz_and_delicious<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>storm_gust<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>tourner<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>urban_jungle<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>valoon<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>varsity_2<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>Vina_Sans<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+            <h1>Ysabeau_Infant<a><button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a></h1>
+        </div>
+        <!-- <div id="list2"></div> -->
+        <div id="floater">
+            <img src="./imgs/2_0001.png" alt="">
+            <img src="./imgs/7_0002.png" alt="">
+            <img src="./imgs/_Ampersand0001.png" alt="">
+            <img src="./imgs/_Dollar_Sign0000.png" alt="">
+            <img src="./imgs/_Pound_Sign0001.png" alt="">
+            <img src="./imgs/A1_0002.png" alt="">
+            <img src="./imgs/B1_0002.png" alt="">
+            <img src="./imgs/H1_0000.png" alt="">
+            <img src="./imgs/K1_0001.png" alt="">
+            <img src="./imgs/N1_0000.png" sss alt="">
+        </div>
+        <div id="floater1">
+            <img src="./imgs/Atom_Bucky_1_0001.png" alt="">
+            <img src="./imgs/Atom_Bucky_2_0001.png" alt="">
+            <img src="./imgs/Atom_Hexa_1_0002.png" alt="">
+            <img src="./imgs/Atom_Sphere_2_0001.png" alt="">
+            <img src="./imgs/Block_Cage_2_0001.png" alt="">
+            <img src="./imgs/Block_Cross_2D_2_0000.png" alt="">
+            <img src="./imgs/Block_Matrix_x3_0003.png" alt="">
+            <img src="./imgs/Capsule_Laying_2_0002.png" alt="">
+            <img src="./imgs/Fractal_Cube_1_0002.png" alt="">
+        </div>
+    </div>
+    <script src="./source/gsap.min.js"></script>
+    <!-- <script src="./source/ScrollTrigger.min.js"></script> -->
+    <script>
+        gsap.from('#nav', {
+            y: -900,
+            duration: 1,
+            delay: 0.5
+        })
+        gsap.from('#list h1', {
+            x: -2000,
+            delay: 1.5,
+            stagger: 0.3,
+            scrollTrigger: {
+                trigger: '#list h1',
+                scroller: 'body',
+            }
+        })
+
+
+
+        gsap.from('#floater1 img:nth-child(0001),#floater1 img:nth-child(0002),#floater1 img:nth-child(0003),#floater1 img:nth-child(0004),#floater1 img:nth-child(0005),#floater1 img:nth-child(0006),#floater1 img:nth-child(0007),#floater1 img:nth-child(0008),#floater1 img:nth-child(0009),#floater1 img:nth-child(0010)', {
+            x: -2000,
+            delay: 1.5,
+            rotate: -360,
+            stagger: 1.6
+        })
+        gsap.from('#floater img:nth-child(0001),#floater img:nth-child(0002),#floater img:nth-child(0003),#floater img:nth-child(0004),#floater img:nth-child(0005),#floater img:nth-child(0006),#floater img:nth-child(0007),#floater img:nth-child(0008),#floater img:nth-child(0009),#floater img:nth-child(0010)', {
+            x: 2000,
+            delay: 2,
+            rotate: 360,
+            stagger: 1.6,
+            rotate: 50,
+
+        })
+    </script>
+</body>
+
+</html>
